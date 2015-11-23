@@ -5,6 +5,7 @@
   "author": "8845musign",
   "description": "cute cat",
   "dependencies": {
+    "cron": "^1.0.9",
     "hubot": "^2.17.0",
     "hubot-catme2": "0.0.3",
     "hubot-diagnostics": "0.0.1",
