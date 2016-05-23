@@ -7,10 +7,9 @@ module.exports = (robot) ->
 
     robot.logger.info "Subversion revision #{revision} committed."
 
-    room = #sandbox
+    room = sandbox
     message = "Subversion revision #{revision} committed."
 
     robot.messageRoom room, message
 
-    res.writeHead 200, {'Content-Type': 'text/plain'}
-    res.end "Thanks; subversion commit written to chat.\n"
+    res.send 'OK'
