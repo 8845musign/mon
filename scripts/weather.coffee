@@ -2,7 +2,7 @@
 #  hubot abc - Returns the message 'xyz'
 #
 module.exports = (robot) ->
-  robot.hear /(.*)の天気は？/i, (msg) ->
+  robot.hear /(.*)の天気は/i, (msg) ->
 
     cityName  = msg.match[1]
     query = encodeURIComponent msg.match[1]
