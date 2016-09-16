@@ -1,3 +1,6 @@
+#Commands:
+#  hubot abc - Returns the message 'xyz'
+#
 module.exports = (robot) ->
   robot.hear /(.*)の天気は？/i, (msg) ->
 
@@ -20,6 +23,6 @@ module.exports = (robot) ->
         when "snow"
           weather = "雪"
 
-        icon = json["list"][0]["weather"][0]["icon"]
+      icon = json["list"][0]["weather"][0]["icon"]
 
       msg.reply "#{cityName}の天気は#{weather}にゃー \n http://openweathermap.org/img/w/#{icon}.png"
